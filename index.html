@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250217205648">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250221001025">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header fix-block">
 			<div class="header__container">
 				<div class="header__content">
 					<a href="#" class="header__logo">
@@ -24,30 +24,30 @@
 						<nav class="header__body">
 							<ul>
 								<li>
-									<a data-goto-header data-goto=".about" href="#">
+									<a class="menu__link" data-goto-header data-goto=".about" href="#about">
 										<span>[</span>
 										О нас
 										<span>]</span>
 									</a>
 								</li>
 								<li>
-									<a data-goto-header data-goto=".services" href="#">
+									<a class="menu__link" data-goto-header data-goto=".services" href="#services">
 										<span>[</span>
 										Услуги
 										<span>]</span>
 									</a>
 								</li>
 								<li>
-									<a data-goto-header data-goto=".clients" href="#">
+									<a class="menu__link" data-goto-header data-goto=".contacts" href="#contacts">
 										<span>[</span>
-										Нам доверяют
+										Контакты
 										<span>]</span>
 									</a>
 								</li>
 								<li>
-									<a data-goto-header data-goto=".contacts" href="#">
+									<a class="menu__link" data-goto-header data-goto=".clients" href="#clients">
 										<span>[</span>
-										Контакты
+										Нам доверяют
 										<span>]</span>
 									</a>
 								</li>
@@ -103,7 +103,7 @@
 					<div class="main-home__pagination pagination"></div>
 				</div>
 			</div>
-			<div class="page__about about">
+			<div id="about" class="page__about about section">
 				<div class="about__container">
 					<div class="about__body">
 						<div class="about__names">
@@ -138,7 +138,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="page__services services">
+			<div id="services" class="page__services services section">
 				<div class="services__container">
 					<div class="services__top">
 						<div class="services__names">
@@ -225,7 +225,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="page__contacts contacts">
+			<div id="contacts" class="page__contacts contacts section">
 				<div class="contacts__container">
 					<div class="contacts__names">
 						<div class="contacts__name name">
@@ -305,7 +305,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="page__clients clients">
+			<div id="clients" class="page__clients clients section">
 				<div class="clients__container">
 					<div class="clients__body">
 						<div class="clients__names">
@@ -403,7 +403,7 @@
 			</div>
 		</footer>
 	</div>
-	<div data-id="1" class="popup">
+	<div data-id="1" class="popup fix-block">
 		<button type="button" class="popup__close _icon-close"></button>
 		<div class="popup__body">
 			<div class="popup__image">
@@ -429,7 +429,7 @@
 			</div>
 		</div>
 	</div>
-	<div data-id="2" class="popup">
+	<div data-id="2" class="popup fix-block">
 		<button type="button" class="popup__close _icon-close"></button>
 		<div class="popup__body">
 			<div class="popup__image">
@@ -455,7 +455,7 @@
 			</div>
 		</div>
 	</div>
-	<div data-id="3" class="popup">
+	<div data-id="3" class="popup fix-block">
 		<button type="button" class="popup__close _icon-close"></button>
 		<div class="popup__body">
 			<div class="popup__image">
@@ -481,7 +481,7 @@
 			</div>
 		</div>
 	</div>
-	<div data-id="4" class="popup">
+	<div data-id="4" class="popup fix-block">
 		<button type="button" class="popup__close _icon-close"></button>
 		<div class="popup__body">
 			<div class="popup__image">
@@ -507,7 +507,7 @@
 			</div>
 		</div>
 	</div>
-	<div data-id="5" class="popup">
+	<div data-id="5" class="popup fix-block">
 		<button type="button" class="popup__close _icon-close"></button>
 		<div class="popup__body">
 			<div class="popup__image">
@@ -533,7 +533,7 @@
 			</div>
 		</div>
 	</div>
-	<div data-id="6" class="popup">
+	<div data-id="6" class="popup fix-block">
 		<button type="button" class="popup__close _icon-close"></button>
 		<div class="popup__body">
 			<div class="popup__image">
@@ -559,7 +559,7 @@
 			</div>
 		</div>
 	</div>
-	<div data-id="7" class="popup popup-feedback">
+	<div data-id="7" class="popup popup-feedback fix-block">
 		<button type="button" class="popup__close _icon-close"></button>
 		<div class="popup__feedback">
 			<div class="feedback__top">
@@ -599,7 +599,7 @@
 			</form>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20250217205648"></script>
+	<script src="js/app.min.js?_v=20250221001025"></script>
 </body>
 
 </html>
