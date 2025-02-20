@@ -587,9 +587,9 @@ h2 {
   top: 0;
   left: 0;
   width: 100%;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: background 0.3s ease 0s;
+  -o-transition: background 0.3s ease 0s;
+  transition: background 0.3s ease 0s;
   padding: 50px 0px;
   z-index: 100;
 }
