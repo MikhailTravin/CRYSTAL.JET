@@ -547,6 +547,7 @@ h2 {
 }
 
 .pagination .swiper-pagination-bullet {
+  cursor: pointer;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 60px;
           flex: 0 1 60px;
@@ -1064,6 +1065,10 @@ h2 {
   margin: 0px 0px 0px 60px;
 }
 
+.services__arrow-prev {
+  cursor: pointer;
+}
+
 .services__arrow-prev::before {
   font-size: 20px;
   -webkit-transform: rotate(-180deg);
@@ -1080,6 +1085,7 @@ h2 {
 }
 
 .services__arrow-next {
+  cursor: pointer;
   margin: 0px 0px 0px 16px;
 }
 

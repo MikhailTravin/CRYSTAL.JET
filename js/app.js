@@ -3075,6 +3075,26 @@
                 }), delay);
             }
         };
+        let bodyLock = (delay = 500) => {
+            let body = document.querySelector("body");
+            const fixBlocks = document.querySelectorAll(".fix-block");
+            if (bodyLockStatus) {
+                let lock_padding = document.querySelectorAll("[data-lp]");
+                for (let index = 0; index < lock_padding.length; index++) {
+                    const el = lock_padding[index];
+                    el.style.paddingRight = window.innerWidth - document.body.offsetWidth + "px";
+                }
+                body.style.paddingRight = window.innerWidth - document.body.offsetWidth + "px";
+                fixBlocks.forEach((el => {
+                    el.style.paddingRight = window.innerWidth - document.body.offsetWidth + "px";
+                }));
+                document.documentElement.classList.add("lock");
+                bodyLockStatus = false;
+                setTimeout((function() {
+                    bodyLockStatus = true;
+                }), delay);
+            }
+        };
         function menuClose() {
             bodyUnlock();
             document.documentElement.classList.remove("menu-open");
@@ -7217,21 +7237,21 @@
             const contentBlock = document.querySelector(contentSelector);
             item.addEventListener("click", (function(e) {
                 contentBlock.classList.add("popup-active");
-                document.documentElement.classList.add("lock");
+                bodyLock();
                 document.documentElement.classList.add("popup-show");
             }));
             const closes = document.querySelectorAll(".popup__close");
             closes.forEach((close => {
                 close.addEventListener("click", (function(e) {
                     contentBlock.classList.remove("popup-active");
-                    document.documentElement.classList.remove("lock");
+                    bodyUnlock();
                     document.documentElement.classList.remove("popup-show");
                 }));
             }));
             const shadow = document.querySelector(".shadow");
             shadow.addEventListener("click", (function(e) {
                 contentBlock.classList.remove("popup-active");
-                document.documentElement.classList.remove("lock");
+                bodyUnlock();
                 document.documentElement.classList.remove("popup-show");
             }));
         }));
