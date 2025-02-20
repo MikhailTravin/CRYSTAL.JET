@@ -186,9 +186,9 @@ body {
   top: 0;
   left: 0;
   opacity: 0;
-  -webkit-transition: opacity 0.8s ease 0s;
-  -o-transition: opacity 0.8s ease 0s;
-  transition: opacity 0.8s ease 0s;
+  -webkit-transition: opacity 2s ease 0s;
+  -o-transition: opacity 2s ease 0s;
+  transition: opacity 2s ease 0s;
   pointer-events: none;
   z-index: 149;
 }
@@ -207,9 +207,9 @@ body {
   height: 100%;
   background: #000;
   padding: 0px;
-  -webkit-transition: right 0.5s ease 0s;
-  -o-transition: right 0.5s ease 0s;
-  transition: right 0.5s ease 0s;
+  -webkit-transition: right 2s ease 0s;
+  -o-transition: right 2s ease 0s;
+  transition: right 2s ease 0s;
   padding: 70px 80px;
   z-index: 150;
   overflow: auto;
@@ -661,7 +661,7 @@ h2 {
   opacity: 1;
 }
 
-.header__body ul li a._navigator-active span {
+.header__body ul li a._active span {
   opacity: 1;
 }
 
@@ -909,9 +909,9 @@ h2 {
   min-height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
+  -webkit-transition: all 3s ease 0s;
+  -o-transition: all 3s ease 0s;
+  transition: all 3s ease 0s;
 }
 
 .about__image img:hover {
@@ -1003,9 +1003,9 @@ h2 {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
+  -webkit-transition: all 3s ease 0s;
+  -o-transition: all 3s ease 0s;
+  transition: all 3s ease 0s;
 }
 
 .services__desc {

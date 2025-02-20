@@ -3055,6 +3055,7 @@
         let bodyLockStatus = true;
         let bodyUnlock = (delay = 500) => {
             let body = document.querySelector("body");
+            const fixBlocks = document.querySelectorAll(".fix-block");
             if (bodyLockStatus) {
                 let lock_padding = document.querySelectorAll("[data-lp]");
                 setTimeout((() => {
@@ -3063,6 +3064,9 @@
                         el.style.paddingRight = "0px";
                     }
                     body.style.paddingRight = "0px";
+                    fixBlocks.forEach((el => {
+                        el.style.paddingRight = "0px";
+                    }));
                     document.documentElement.classList.remove("lock");
                 }), delay);
                 bodyLockStatus = false;
@@ -6976,12 +6980,12 @@
             observeParents: true,
             slidesPerView: 1,
             spaceBetween: 0,
-            speed: 800,
+            speed: 5e3,
             loop: true,
             lazy: true,
             effect: "fade",
             autoplay: {
-                delay: 3e3,
+                delay: 4e3,
                 disableOnInteraction: false
             },
             pagination: {
