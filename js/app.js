@@ -11624,6 +11624,15 @@
         };
         SimpleBar.getOptions = getOptions;
         if (can_use_dom_default()) SimpleBar.initHtmlApi();
+        const simplebar_esm = SimpleBar;
+        const simpleBarInstance = new simplebar_esm(document.querySelector(".popup__simblebar"));
+        const simpleBarElement = simpleBarInstance.getScrollElement();
+        simpleBarElement.addEventListener("scroll", (function() {
+            const scrollHeight = simpleBarElement.scrollHeight;
+            const scrollTop = simpleBarElement.scrollTop;
+            const clientHeight = simpleBarElement.clientHeight;
+            if (scrollTop + clientHeight >= scrollHeight - 10) document.documentElement.classList.add("scroll-policy"); else document.documentElement.classList.remove("scroll-policy");
+        }));
         class ScrollWatcher {
             constructor(props) {
                 let defaultConfig = {
