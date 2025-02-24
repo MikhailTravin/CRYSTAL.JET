@@ -10470,12 +10470,12 @@
             observeParents: true,
             slidesPerView: 1,
             spaceBetween: 0,
-            speed: 5e3,
+            speed: 800,
             loop: true,
             lazy: true,
             effect: "fade",
             autoplay: {
-                delay: 4e3,
+                delay: 3e3,
                 disableOnInteraction: false
             },
             pagination: {
