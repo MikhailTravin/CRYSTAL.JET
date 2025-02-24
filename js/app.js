@@ -10470,7 +10470,7 @@
             observeParents: true,
             slidesPerView: 1,
             spaceBetween: 0,
-            speed: 800,
+            speed: 0,
             loop: true,
             lazy: true,
             effect: "fade",
